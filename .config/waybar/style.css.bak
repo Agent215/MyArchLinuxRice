@@ -1,0 +1,22 @@
+#backlight-slider {
+  min-width: 120px;
+}
+
+#backlight-slider slider {
+  min-height: 0;
+  min-width: 0;
+  opacity: 0;
+  border: none;
+  box-shadow: none;
+  background-image: none;
+}
+
+#backlight-slider trough {
+  min-height: 8px;
+  border-radius: 999px;
+}
+
+#backlight-slider highlight {
+  min-height: 8px;
+  border-radius: 999px;
+}
