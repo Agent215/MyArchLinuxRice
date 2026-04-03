@@ -2,6 +2,16 @@
 
 Personal Linux desktop configuration centered on Hyprland, Fish, Waybar, Wofi, and terminal theming.
 
+## Preview
+
+Desktop layout:
+
+![Hyprland desktop preview](assets/images/archlinuxDesktop.png)
+
+Terminal and file manager:
+
+![Fish shell and Thunar preview](assets/images/fishAndThunar.png)
+
 ## System Specs
 
 This repo is currently used on a Lenovo ThinkPad T490 with:
