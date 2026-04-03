@@ -1,0 +1,7 @@
+[global]
+font = JetBrainsMono Nerd Font 10
+origin = top-right
+offset = 12x12
+width = 320
+frame_width = 2
+seperator_height = 2
