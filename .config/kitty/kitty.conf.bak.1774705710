@@ -1,0 +1,24 @@
+font_family JetBrainsmono Nerf Font
+font_size 11.0
+confirm_os_window_close 0
+background_opacity 0.70
+dynamic_background_opacity yes
+background_blur 8
+foreground #7CFF7A
+background #020702
+cursor #00FF41
+selection_background #103010
+selection_foreground #D8FFD8
+color2 #00FF41
+color10 #7CFF7A
+color8 #2A5A2A
+color15 #D8FFD8
+window_padding_width 10
+enable_audio_bell no
+visual_bell_duration 0.0
+scrollbar never
+cursor_shape beam
+cursor_blink_interval 0.8
+cursor_trail 20
+cursor_trail_decay 0.1 0.35
+cursor_trail_color #00ff41
