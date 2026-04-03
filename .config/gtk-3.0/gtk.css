@@ -1,0 +1,55 @@
+@define-color theme_bg_color #050805;
+@define-color theme_fg_color #b7ffb7;
+@define-color theme_base_color #050805;
+@define-color theme_text_color #b7ffb7;
+@define-color theme_selected_bg_color #00ff41;
+@define-color theme_selected_fg_color #001500;
+@define-color accent_color #00ff41;
+@define-color accent_bg_color #00ff41;
+@define-color accent_fg_color #001500;
+@define-color success_color #44ff88;
+@define-color warning_color #d7ff7a;
+@define-color error_color #ff5f5f;
+
+window, dialog, .background {
+  background-color: #050805;
+  color: #b7ffb7;
+}
+
+treeview.view:selected,
+.view:selected,
+iconview.view:selected,
+selection {
+  background-color: #00ff41;
+  color: #001500;
+}
+
+entry, searchentry, textview, text {
+  background-color: #0a120a;
+  color: #b7ffb7;
+  caret-color: #00ff41;
+  border-color: #1d5c2c;
+}
+
+button {
+  background-image: none;
+  background-color: #0d140d;
+  color: #b7ffb7;
+  border: 1px solid #1d5c2c;
+  box-shadow: none;
+}
+
+button:hover {
+  background-color: #122012;
+  border-color: #00ff41;
+}
+
+.sidebar, paned, scrolledwindow {
+  background-color: #070b07;
+}
+
+headerbar {
+  background-color: #081008;
+  color: #d6ffd6;
+  border-bottom: 1px solid #1d5c2c;
+}
