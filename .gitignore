@@ -4,5 +4,6 @@
 *.p12
 *.log
 .env
+.codex
 .ssh/
 gnupg/
