@@ -47,3 +47,6 @@ set -g fish_color_escape f1c0e8
 set -g fish_color_valid_path 86efac
 # <<< matrix-pastel <<<
 
+
+# Created by `pipx` on 2026-04-07 22:28:51
+set PATH $PATH /home/brahm/.local/bin

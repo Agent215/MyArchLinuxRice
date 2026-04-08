@@ -109,8 +109,8 @@
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C {icon}",
+        // "format-critical": "{temperatureF}°F {icon}",
+        "format": "{temperatureF}°F {icon}",
         "format-icons": ["", "", ""]
     },
     "backlight": {
@@ -136,7 +136,6 @@
         "bat": "BAT2"
     },
     "network": {
-        "interface": "wlan0", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
@@ -194,4 +193,3 @@
         "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300 --arrow-style ➤ --tooltip-align-columns 'Source Code Pro' --color-semver-updates F15D22,FFCE51,73C48F,48B9C7,88807C --column-color-overrides '3=EEEEEC,4=AD7FA8'"
     }
 }
-

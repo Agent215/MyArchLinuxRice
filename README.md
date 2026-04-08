@@ -35,6 +35,7 @@ These specs are included only to describe the machine this setup was tuned on. N
 - `~/.config/fish`: Fish shell config and prompt
 - `~/.config/kitty`: Kitty theme and terminal behavior
 - `~/.config/alacritty`: Alacritty theme and font settings
+- `~/.config/chromium-flags.conf`: Chromium Wayland and dark theme flags
 - `~/.config/mako` and `~/.config/dunst`: notification config
 - `~/.config/gtk-3.0` and `~/.config/gtk-4.0`: GTK theme overrides
 - `~/.config/picom`, `~/.config/flameshot`, `~/.config/pavucontrol`
@@ -53,6 +54,7 @@ This repo assumes a Linux machine with at least some of these installed:
 - `wofi`
 - `kitty`
 - `alacritty`
+- `chromium`
 - `fish`
 - `mako` or `dunst`
 - `nm-applet`
@@ -79,6 +81,22 @@ done
 ```
 
 If you prefer to inspect changes first, copy individual files manually instead of linking everything.
+
+## Chromium
+
+Chromium is expected to use the tracked flags in `~/.config/chromium-flags.conf`:
+
+- `--ozone-platform=wayland` for native Wayland support
+- `--gtk-version=4` so it follows the GTK 4 stack more closely
+- `--force-dark-mode` and `--enable-features=WebUIDarkMode` for a dark browser UI
+
+Install it on Arch with:
+
+```bash
+sudo pacman -S chromium
+```
+
+For sites themselves, Chromium still has limited desktop-theme integration. If you want pages to follow the same dark look consistently, use an extension such as Dark Reader.
 
 ## Machine-specific notes
 
