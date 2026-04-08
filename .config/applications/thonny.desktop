@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Thonny
+Comment=Python IDE for MicroPython and general Python work
+Exec=/home/brahm/.local/bin/thonny
+Terminal=false
+Type=Application
+Categories=Development;IDE;Education;
+StartupNotify=true
