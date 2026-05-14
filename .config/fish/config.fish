@@ -48,8 +48,10 @@ set -g fish_color_valid_path 86efac
 # <<< matrix-pastel <<<
 
 
-# Created by `pipx` on 2026-04-07 22:28:51
-set PATH $PATH /home/brahm/.local/bin
+# Keep user-local tools ahead of system packages so npm/pipx installs are writable
+# and shadow older system-wide copies when both exist.
+set -gx NPM_CONFIG_PREFIX /home/brahm/.local
+set -gx PATH /home/brahm/.local/bin (string match -v /home/brahm/.local/bin -- $PATH)
 
 function bruno
     systemd-run --user --quiet --collect --same-dir --property=ExitType=cgroup /usr/bin/bruno --enable-features=UseOzonePlatform --ozone-platform=wayland >/dev/null 2>&1
