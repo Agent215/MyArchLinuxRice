@@ -50,3 +50,11 @@ set -g fish_color_valid_path 86efac
 
 # Created by `pipx` on 2026-04-07 22:28:51
 set PATH $PATH /home/brahm/.local/bin
+
+function bruno
+    systemd-run --user --quiet --collect --same-dir --property=ExitType=cgroup /usr/bin/bruno --enable-features=UseOzonePlatform --ozone-platform=wayland >/dev/null 2>&1
+end
+
+function thonny
+    systemd-run --user --quiet --collect --same-dir --property=ExitType=cgroup /home/brahm/.local/bin/thonny >/dev/null 2>&1
+end
